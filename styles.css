@@ -418,3 +418,129 @@ hr{
         margin-bottom: 20px;
     }
 }
+
+.navbar {
+    background-color: #282424ba;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.search {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 20px;
+    position: relative;
+}
+
+.search img {
+    position: absolute;
+    right: 10px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.search input {
+    padding: 10px 35px 10px 15px;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: #1c1b1b;
+    box-sizing: border-box;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.links li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.links img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.bar{
+    background-color: rgba(255, 255, 255, 0.623);
+    height: 5px;
+    width: 25px;
+    border: none;
+    outline: none;
+}
+.hamburger{
+    display: flex;
+    background-color: #282424ba;
+    flex-direction: column;
+    gap: 10px;
+    display: none;
+    background: transparent;
+}
+.sizemenu{
+    height: 12rem;
+    z-index: 5;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    display: none;
+    top: 80px;
+    align-items: center;
+    width: 8rem;
+    background-color: #282424ba;
+}
+.sizemenu li{
+    background-color: #282424ba;
+    padding: 10px;
+    color: white;
+    list-style-type: none;
+}
+@media (max-width: 768px) {
+    .search,
+    .links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+    .movie-banner{
+        height: 100%;
+    }
+}
